@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <!-- Custom style -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Bootstrap style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+</head>
+<body>
+    <div class="container">
+        <div class="headers">
+            <h1 class="header">Expense Tracker</h1>
+            <h2 class="green-header">Add A New Item:</h2>
+        </div>
+        <div class="input">
+            <div class="row">
+                <div class="col">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Where was the expense made?">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="date">Date: </label>
+                    <input type="date" id="date">
+                </div>
+                <div class="col">
+                    <label for="amount">Amount: </label>
+                    <input type="text" id="amount" placeholder="Amount of expense.">
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-success" id="add-expense">Add Expense</button>
+        <div class="container table">
+            <table class="table table-success table-striped" id="table">
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col"></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- Custom Script -->
+    <script src="script/index.js"></script>
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
